@@ -1,0 +1,15 @@
+@media (min-width: 340px) {
+  .box {
+    background-color: red; } }
+
+@media (min-width: 768px) {
+  .box {
+    background-color: blue; } }
+
+@media (min-width: 1024px) {
+  .box {
+    background-color: yellow; } }
+
+@media (min-width: 1200px) {
+  .box {
+    background-color: green; } }

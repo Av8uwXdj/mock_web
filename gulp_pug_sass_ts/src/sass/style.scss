@@ -1,0 +1,11 @@
+// media-mixin define
+$break-points: (sm: 340px, md: 768px, lg: 1024px, xl: 1200px);
+@mixin media-query ($key) { @media(min-width:map-get($break-points, $key)) { @content; }}
+
+// elements
+.box {
+    @include media-query(sm) { background-color: red;    }
+    @include media-query(md) { background-color: blue;   }
+    @include media-query(lg) { background-color: yellow; }
+    @include media-query(xl) { background-color: green;  }
+}
